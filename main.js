@@ -7,27 +7,27 @@ const container = document.querySelector(".container");
 // creazione ciclo per stampare numeri da 1 a 100
 for (let UnoCento = 1; UnoCento <= 100; UnoCento++) {
     
-    //creazione div.box
-    let box = `<div class="box">${UnoCento}</div>`; 
+    //creazione div
+    let box = document.createElement("div"); 
 
-    //conzdizione per sostituire al numero il fizzbuzz/buzz/fizz
+    //aggiungere contenuto al box (div) tramite criteri
     if (UnoCento % 5 === 0 && UnoCento % 3 === 0) { //divisibile sia per 5 che per 3
-        box = `<div class="box">FizzBuzz</div>`;
+        box.append("FizzBuzz");
     
     } else if (UnoCento % 5 === 0) { //divisibile per 5
-        box = `<div class="box">Buzz</div>`;
+        box.append("Buzz");
     
     } else if (UnoCento % 3 === 0) { //divisibile per 3
-        box = `<div class="box">Fizz</div>`;
+        box.append("Fizz");
     
     } else {
-        box;
+        box.append(UnoCento);
     }
 
-    //le box vengono inserite nel container
-    container.innerHTML += box;
-    console.log(box);
-    
+
+    //aggiungere i box (div) al container
+    container.append(box)    
 }
 
 
+//Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.

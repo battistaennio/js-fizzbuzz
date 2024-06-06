@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container div{
+    background-color: blueviolet;
+    height: 80px;
+    width: calc(100% / 10 - 10px);
+    text-align: center;
+    line-height: 80px;
+}
