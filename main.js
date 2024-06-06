@@ -2,7 +2,21 @@
 
 // creazione ciclo per stampare numeri da 1 a 100
 for (let UnoCento = 1; UnoCento <= 100; UnoCento++) {
-    console.log(UnoCento)
+
+    //conzdizione per sostituire al numero il fizzbuzz/buzz/fizz
+    if (UnoCento % 5 === 0 && UnoCento % 3 === 0) { //divisibile sia per 5 che per 3
+        console.log("FizzBuzz");
+    
+    } else if (UnoCento % 5 === 0) { //divisibile per 5
+        console.log("Buzz");
+    
+    } else if (UnoCento % 3 === 0) { //divisibile per 3
+        console.log("Fizz");
+    
+    } else {
+        console.log(UnoCento)
+    }
+    
 }
 
 
