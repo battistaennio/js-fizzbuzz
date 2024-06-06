@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #083b4c;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 50px;
+}
+
 .container{
     margin: 20px 15%;
     display: flex;
@@ -13,9 +24,24 @@
 }
 
 .container div{
-    background-color: blueviolet;
     height: 80px;
     width: calc(100% / 10 - 10px);
     text-align: center;
     line-height: 80px;
+}
+
+.fizzbuzz{
+    background-color: #f0466f;
+}
+
+.fizz{
+    background-color: #0cd6a1;
+}
+
+.buzz{
+    background-color: #ffd166;
+}
+
+.box{
+    background-color: #1389b2;
 }
